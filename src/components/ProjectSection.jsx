@@ -7,7 +7,7 @@ const projects = [
     title: "Zentry Landing Page",
     description:
       "This is a Gaming paltform landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that conveys the feel of gaming",
-    image: "public/projects/Zentry.png",
+    image: "/projects/Zentry.png",
     tags: ["React", "Tailwind", "GSAP"],
     demoUrl: "#",
     githubUrl: "#",
