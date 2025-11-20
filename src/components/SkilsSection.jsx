@@ -41,7 +41,7 @@ const SkilsSection = () => {
             <button
               key={key}
               className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                activeCategory === category ? "bg-primary text-foreground" : "bg-secondary/70 text-primary-foreground hover:bg-secondary"
+                activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary"
               )}
               onClick={() => setActiveCategory(category)}
             >
