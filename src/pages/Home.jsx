@@ -7,6 +7,7 @@ import AboutSection from '../components/AboutSection'
 import SkilsSection from '../components/SkilsSection'
 import ProjectSection from '../components/ProjectSection'
 import ContactSection from '../components/ContactSection'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         </main>
 
         {/* Footer */}
+        <Footer />
     </div>
   )
 }
