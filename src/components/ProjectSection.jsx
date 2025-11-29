@@ -9,29 +9,59 @@ const projects = [
       "This is a Gaming paltform landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that conveys the feel of gaming",
     image: "/projects/Zentry.png",
     tags: ["React", "Tailwind", "GSAP"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://zentry-awwward-website.vercel.app/",
+    githubUrl: "https://github.com/Snofts/zentry-awward-website.git",
   },
   {
-    id: 1,
+    id: 2,
     title: "Phenz Ecommerce Website",
     description:
-      "This is a Gaming paltform landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that conveys the feel of gaming",
+      "This is a Fullstack Ecommerce website built with ReactJs, Tailwindcss, Express, MongoDB and Nodejs. The website is fully functional and mobile responsive with filters for products, user login, payment integration etc.",
     image: "/projects/Phenz.png",
     tags: ["React", "Tailwind", "GSAP"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://phenz-ecommerce-frontend.vercel.app/",
+    githubUrl: "https://github.com/Snofts/Phenz-Ecommerce.git",
   },
   {
-    id: 1,
+    id: 3,
     title: "Spylt Clone Landing Page",
     description:
-      "This is a Gaming paltform landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that conveys the feel of gaming",
+      "This is a Spylt website landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that are catchy and inviting customers to buy.",
     image: "/projects/Spylt.png",
     tags: ["React", "Tailwind", "GSAP"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://spylt-beta-beryl.vercel.app/",
+    githubUrl: "https://github.com/Snofts/Spylt-.git",
   },
+  {
+    id: 4,
+    title: "CodeX – AI Chat Assistant",
+    description:
+      "CodeX is a simple AI-powered chatbot web app built with Node.js and plain JavaScript, using the Groq API for fast and intelligent responses. Users can chat with an AI assistant in real-time through a clean and responsive frontend.",
+    image: "/projects/Codex.png",
+    tags: ["React", "Tailwind", "GSAP"],
+    demoUrl: "https://code-x-self.vercel.app/",
+    githubUrl: "https://github.com/Snofts/codeX.git",
+  },
+  {
+    id: 5,
+    title: "Promptopia",
+    description:
+      "Promptopia is a modern, full-stack web application built with Next.js 13, MongoDB, and Tailwind CSS. It allows users to create, share, and discover AI prompts.",
+    image: "/projects/Promptopia.png",
+    tags: ["React", "Tailwind", "GSAP"],
+    demoUrl: "https://promptopia-rho-three-48.vercel.app/",
+    githubUrl: "https://github.com/Snofts/promptopia.git",
+  },
+  // {
+  //   id: 4,
+  //   title: "Forkify",
+  //   description:
+  //     "Forkify is a reciepe app where you can search for the recepie of different   ",
+  //   image: "/projects/Promptopia.png",
+  //   tags: ["React", "Tailwind", "GSAP"],
+  //   demoUrl: "https://forkify-snofts.netlify.app/",
+  //   githubUrl: "https://github.com/Snofts/forkify-App-portfolio-.git",
+  // },
 ];
 
 const ProjectSection = () => {
