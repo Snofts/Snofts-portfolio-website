@@ -47,7 +47,7 @@ const projects = [
     title: "Promptopia",
     description:
       "Promptopia is a modern, full-stack web application built with Next.js 13, MongoDB, and Tailwind CSS. It allows users to create, share, and discover AI prompts.",
-    image: "/projects/Promptopia.png",
+    image: "/projects/promptopia.png",
     tags: ["React", "Tailwind", "GSAP"],
     demoUrl: "https://promptopia-rho-three-48.vercel.app/",
     githubUrl: "https://github.com/Snofts/promptopia.git",
