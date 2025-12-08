@@ -4,6 +4,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "Brainwave website",
+    description:
+      "This is a Gaming paltform landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that conveys the feel of gaming",
+    image: "/projects/Brainwave.png",
+    tags: ["React", "Tailwind"],
+    demoUrl: "https://brainwave-pi-self.vercel.app/",
+    githubUrl: "https://github.com/Snofts/Brainwave.git",
+  },
+  {
+    id: 2,
     title: "Zentry Landing Page",
     description:
       "This is a Gaming paltform landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that conveys the feel of gaming",
@@ -13,7 +23,7 @@ const projects = [
     githubUrl: "https://github.com/Snofts/zentry-awward-website.git",
   },
   {
-    id: 2,
+    id: 3,
     title: "Phenz Ecommerce Website",
     description:
       "This is a Fullstack Ecommerce website built with ReactJs, Tailwindcss, Express, MongoDB and Nodejs. The website is fully functional and mobile responsive with filters for products, user login, payment integration etc.",
@@ -23,7 +33,7 @@ const projects = [
     githubUrl: "https://github.com/Snofts/Phenz-Ecommerce.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "Spylt Clone Landing Page",
     description:
       "This is a Spylt website landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that are catchy and inviting customers to buy.",
@@ -33,7 +43,7 @@ const projects = [
     githubUrl: "https://github.com/Snofts/Spylt-.git",
   },
   {
-    id: 4,
+    id: 5,
     title: "CodeX – AI Chat Assistant",
     description:
       "CodeX is a simple AI-powered chatbot web app built with Node.js and plain JavaScript, using the Groq API for fast and intelligent responses. Users can chat with an AI assistant in real-time through a clean and responsive frontend.",
@@ -43,7 +53,7 @@ const projects = [
     githubUrl: "https://github.com/Snofts/codeX.git",
   },
   {
-    id: 5,
+    id: 6,
     title: "Promptopia",
     description:
       "Promptopia is a modern, full-stack web application built with Next.js 13, MongoDB, and Tailwind CSS. It allows users to create, share, and discover AI prompts.",
