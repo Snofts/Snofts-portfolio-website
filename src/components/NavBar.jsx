@@ -16,7 +16,8 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
+      console.log(window.screenY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -73,7 +74,7 @@ const NavBar = () => {
             {navItems.map((item, key) => (
               <a
                 key={key}
-                href="item.href"
+                href={item.href}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >

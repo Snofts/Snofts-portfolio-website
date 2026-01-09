@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { cn } from "../lib/utils";
+import { FaHtml5 } from "react-icons/fa";
 
 const skills = [
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
+  { name: "HTML/CSS", icon:"FaHtml5", level: 95, category: "frontend" },
+  { name: "JavaScript", icon:"FaHtml5", level: 90, category: "frontend" },
   { name: "React", level: 90, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "Next.js", level: 80, category: "frontend" },
@@ -56,9 +57,12 @@ const SkilsSection = () => {
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
               <div className="text-left mb-4">
+                <div>
+                  {skill.icon ? <skill.icon className="h-8 w-8 mb-2 text-primary" /> : <FaHtml5 className="h-8 w-8 mb-2 text-primary" />}
+                </div>
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
-              <div className="w-full bg-secondary/50 rounded-full overflow-hidden">
+              {/* <div className="w-full bg-secondary/50 rounded-full overflow-hidden">
                 <div
                   className="bg-primary h-2 origin-left animate-[grow_i.5s_ease-out]"
                   style={{
@@ -70,7 +74,7 @@ const SkilsSection = () => {
                 <span className="text-sm text-muted-foreground">
                   {skill.level}%
                 </span>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

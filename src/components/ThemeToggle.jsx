@@ -1,42 +1,67 @@
-import { Moon, Sun } from 'lucide-react';
-import React, { useEffect, useState } from 'react'
-import { cn } from '../lib/utils';
+import { Moon, Sun } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { cn } from "../lib/utils";
 
 const ThemeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-    useEffect(() => {
-        const storedTheme = localStorage.getItem("theme")
-        if(storedTheme === "dark"){
-            setIsDarkMode(true)
-            document.documentElement.classList.add("dark")
-        }else{
-            setIsDarkMode(false)
-            document.documentElement.classList.remove("dark")
-        }
-    }, [])
+  // useEffect(() => {
+  //     const storedTheme = localStorage.getItem("theme")
+  //     if(storedTheme === "dark"){
+  //         setIsDarkMode(true)
+  //         document.documentElement.classList.add("dark")
+  //     }else{
+  //         setIsDarkMode(false)
+  //         document.documentElement.classList.remove("dark")
+  //     }
+  // }, [])
 
-    const toggleTheme = () => {
-        if(isDarkMode){
-            setIsDarkMode(false)
-            document.documentElement.classList.remove("dark")
-            localStorage.setItem("theme", "light")
-        } else{
-            setIsDarkMode(true)
-            document.documentElement.classList.add("dark")
-            localStorage.setItem("theme", "dark")
-        }
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme) {
+      const dark = storedTheme === "dark";
+      setIsDarkMode(dark);
+      if (dark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    } else {
+      // First visit → default to dark
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark"); // optional: persist default
     }
+  }, []);
+
+  const toggleTheme = () => {
+    if (isDarkMode) {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  };
 
   return (
-    <button onClick={toggleTheme} className={cn("fixed max-sm:hidden top-5 right-5 z-50 rounded-full transition-colors duration-300",
-    "focus:outline-hidden"
-    )}>
-        {
-            isDarkMode ? <Sun className='h-6 w-6 text-yellow-300' /> : <Moon className='h-6 w-6 text-blue-900' />
-        }
+    <button
+      onClick={toggleTheme}
+      className={cn(
+        "fixed max-sm:hidden top-5 right-5 z-50 rounded-full transition-colors duration-300",
+        "focus:outline-hidden"
+      )}
+    >
+      {isDarkMode ? (
+        <Sun className="h-6 w-6 text-yellow-300" />
+      ) : (
+        <Moon className="h-6 w-6 text-blue-900" />
+      )}
     </button>
-  )
-}
+  );
+};
 
-export default ThemeToggle
+export default ThemeToggle;
