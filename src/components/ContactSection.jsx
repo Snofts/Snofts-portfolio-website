@@ -13,6 +13,7 @@ import {
 import React, { useState } from "react";
 import { cn } from "./../lib/utils";
 import { toast } from "react-toastify";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactSection = () => {
   const [isSubmiting, setIsSubmiting] = useState(false);
@@ -96,8 +97,8 @@ const ContactSection = () => {
                 <a href="https://github.com/Snofts" target="_blank">
                   <Github />
                 </a>
-                <a href="" target="_blank">
-                  <Twitch />
+                <a href="https://wa.me/2348100802096" target="_blank">
+                  <FaWhatsapp size={25} />
                 </a>
               </div>
             </div>
