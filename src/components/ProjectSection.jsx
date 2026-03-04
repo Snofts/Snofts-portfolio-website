@@ -39,7 +39,7 @@ const projects = [
       "This is a Fullstack Ecommerce website built with ReactJs, Tailwindcss, Express, MongoDB and Nodejs. The website is fully functional and mobile responsive with filters for products, user login, payment integration etc.",
     image: "/projects/Phenz.png",
     tags: ["React", "Tailwind", "GSAP"],
-    demoUrl: "https://phenz-ecommerce-frontend.vercel.app/",
+    demoUrl: "https://phenz.shop",
     githubUrl: "https://github.com/Snofts/Phenz-Ecommerce.git",
   },
   {
@@ -68,7 +68,7 @@ const projects = [
     description:
       "Promptopia is a modern, full-stack web application built with Next.js 13, MongoDB, and Tailwind CSS. It allows users to create, share, and discover AI prompts.",
     image: "/projects/promptopia.png",
-    tags: ["React", "Tailwind", "GSAP"],
+    tags: ["Next.js", "Tailwind", "GSAP"],
     demoUrl: "https://promptopia-rho-three-48.vercel.app/",
     githubUrl: "https://github.com/Snofts/promptopia.git",
   },
