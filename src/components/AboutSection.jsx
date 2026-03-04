@@ -32,7 +32,8 @@ const AboutMe = () => {
                 Get In Touch
               </a>
               <a
-                href="#contact"
+                href="https://drive.google.com/file/d/1_gEIeqzIE4-3McgzTAnSA4-VooM8cikX/view?usp=sharing"
+                target="_blank"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -47,7 +48,10 @@ const AboutMe = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
-                  <p className="text-muted-foreground">Creating responsive websites and web applicaitons with mordern frameworks.</p>
+                  <p className="text-muted-foreground">
+                    Creating responsive websites and web applicaitons with
+                    mordern frameworks.
+                  </p>
                 </div>
               </div>
             </div>
@@ -58,8 +62,11 @@ const AboutMe = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground"> Designing intuitive user interfaces and seamless user
-                    experiences.</p>
+                  <p className="text-muted-foreground">
+                    {" "}
+                    Designing intuitive user interfaces and seamless user
+                    experiences.
+                  </p>
                 </div>
               </div>
             </div>
@@ -70,8 +77,10 @@ const AboutMe = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Mangement</h4>
-                  <p className="text-muted-foreground">Leading projects from conception to completion with agile
-                    methodologies.</p>
+                  <p className="text-muted-foreground">
+                    Leading projects from conception to completion with agile
+                    methodologies.
+                  </p>
                 </div>
               </div>
             </div>
