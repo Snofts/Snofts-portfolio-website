@@ -44,6 +44,16 @@ const projects = [
   },
   {
     id: 5,
+    title: "Contract Safety Agreement Form",
+    description:
+      "This is a contract safety agreement form built with Wordpress, HTML, CSS and JS. The form is used to collect information from users and store it in a database. The form is also used to generate a PDF document that is sent to the user via email.",
+    image: "/projects/poshsafety.png",
+    tags: ["Wordpress", "HTML", "CSS", "JS"],
+    demoUrl: "https://app.poshsafety.com/dominium/",
+    githubUrl: "#",
+  },
+  {
+    id: 6,
     title: "Spylt Clone Landing Page",
     description:
       "This is a Spylt website landing page built with ReactJs, Tailwindcss and GSAP. The website is built with animations that are catchy and inviting customers to buy.",
@@ -53,7 +63,7 @@ const projects = [
     githubUrl: "https://github.com/Snofts/Spylt-.git",
   },
   {
-    id: 6,
+    id: 7,
     title: "CodeX – AI Chat Assistant",
     description:
       "CodeX is a simple AI-powered chatbot web app built with Node.js and plain JavaScript, using the Groq API for fast and intelligent responses. Users can chat with an AI assistant in real-time through a clean and responsive frontend.",
@@ -63,7 +73,7 @@ const projects = [
     githubUrl: "https://github.com/Snofts/codeX.git",
   },
   {
-    id: 7,
+    id: 8,
     title: "Promptopia",
     description:
       "Promptopia is a modern, full-stack web application built with Next.js 13, MongoDB, and Tailwind CSS. It allows users to create, share, and discover AI prompts.",
