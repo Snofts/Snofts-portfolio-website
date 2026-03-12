@@ -17,6 +17,7 @@ import { FaWordpress } from "react-icons/fa";
 import { FaWix } from "react-icons/fa";
 import { FaSquarespace } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
+import { TbSeo } from "react-icons/tb";
 
 const iconMap = {
   FaHtml5: FaHtml5,
@@ -36,6 +37,7 @@ const iconMap = {
   FaWix: FaWix,
   FaSquarespace: FaSquarespace,
   FiFramer: FiFramer,
+  TbSeo: TbSeo,
 };
 
 const skills = [
@@ -65,7 +67,8 @@ const skills = [
   { name: "Wordpress", icon: "FaWordpress", level: 95, category: "tools" },
   { name: "Wix", icon: "FaWix", level: 95, category: "tools" },
   { name: "Squarespace", icon: "FaSquarespace", level: 95, category: "tools" },
-  { name: "Framer", icon: "FiFramer", level: 85, category: "tools" }
+  { name: "Framer", icon: "FiFramer", level: 85, category: "tools" },
+  { name: "SEO", icon: "TbSeo", level: 80, category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
