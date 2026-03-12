@@ -13,6 +13,10 @@ import { FaGithub } from "react-icons/fa"; // GitHub (better than SiGithub for s
 import { SiDocker } from "react-icons/si"; // Docker
 import { SiFigma } from "react-icons/si"; // Figma
 import { DiVisualstudio } from "react-icons/di"; // VS Code
+import { FaWordpress } from "react-icons/fa";
+import { FaWix } from "react-icons/fa";
+import { FaSquarespace } from "react-icons/fa";
+import { FiFramer } from "react-icons/fi";
 
 const iconMap = {
   FaHtml5: FaHtml5,
@@ -28,6 +32,10 @@ const iconMap = {
   SiDocker: SiDocker,
   SiFigma: SiFigma,
   DiVisualstudio: DiVisualstudio,
+  FaWordpress: FaWordpress,
+  FaWix: FaWix,
+  FaSquarespace: FaSquarespace,
+  FiFramer: FiFramer,
 };
 
 const skills = [
@@ -54,6 +62,10 @@ const skills = [
   { name: "Docker", icon: "SiDocker", level: 70, category: "tools" },
   { name: "Figma", icon: "SiFigma", level: 85, category: "tools" },
   { name: "VS Code", icon: "DiVisualstudio", level: 95, category: "tools" },
+  { name: "Wordpress", icon: "FaWordpress", level: 95, category: "tools" },
+  { name: "Wix", icon: "FaWix", level: 95, category: "tools" },
+  { name: "Squarespace", icon: "FaSquarespace", level: 95, category: "tools" },
+  { name: "Framer", icon: "FiFramer", level: 85, category: "tools" }
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
