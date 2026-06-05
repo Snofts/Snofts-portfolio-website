@@ -11,7 +11,8 @@ const HeroSection = () => {
                     <span className='text-primary opacity-0 animate-fade-in-delay-1'> Samuel</span>
                     <span className='text-gradient ml-2 opacity-0 animate-fade-in-delay-2'> Owolabi</span>
                 </h1>
-                <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3'>Creating beautiful, high-performance web experiences one perfectly crafted component at a time. I build full-stack JavaScript products people love from database to deployment</p>
+                <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3'>I am a passionate Web Developer & Tech Creator, Creating beautiful, high-performance web experiences one perfectly crafted component at a time. I build full-stack JavaScript products people love from database to deployment.</p>
+                <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3'>Other skills are: <span className='hover:text-primary'><a href="https://drive.google.com/drive/folders/1ps8Z7onYcntLF57cRetluAyOv9kftj87?usp=sharing">Graphic design</a></span> </p>
                 <div className='pt-4 opacity-0 animate-fade-in-delay-4'>
                     <a href="#projects" className='cosmic-button'>View My Work</a>
                 </div>
