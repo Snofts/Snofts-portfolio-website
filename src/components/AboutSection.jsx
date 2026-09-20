@@ -1,6 +1,6 @@
 import React from "react";
 import { clsx } from "clsx";
-import { Briefcase, Code, User } from "lucide-react";
+import { ArrowBigRight, ArrowRight, Briefcase, Code, Paintbrush, User } from "lucide-react";
 
 const AboutMe = () => {
   return (
@@ -41,32 +41,23 @@ const AboutMe = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6">
+            <h2 className="text-xl md:text-2xl font-bold mb-1 text-left">
+              Other
+              <span className="text-primary"> Skill</span>
+            </h2>
             <div className="gradient-border p-6 card-hover ">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Paintbrush className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <h4 className="font-semibold text-lg">Graphic Design</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applicaitons with
-                    mordern frameworks.
+                    Creating visually compelling designs that communicate ideas, strengthen brands, and engage audiences.
                   </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover ">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-                    {" "}
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
-                  </p>
+                  <div className="w-42 text-sm">
+                  <a className="flex mt-3 cosmic-button" href="https://www.behance.net/gallery/254498393/Graphic-Design-Porjects" >Go to portfolio <ArrowRight className="ml-2 h-4 w-4 mt-1"/></a> 
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,6 +75,21 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
+            <div className="gradient-border p-6 card-hover ">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <User className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Virtual Assistance</h4>
+                  <p className="text-muted-foreground">
+                    {" "}
+                    Providing reliable administrative, customer support, scheduling, and operational assistance to help businesses stay organized and productive.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
