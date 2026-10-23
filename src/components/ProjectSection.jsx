@@ -1,7 +1,18 @@
 import React, { useState } from "react";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
+  {
+    id: 1,
+    title: "Yeraldssignature Ecommerce Website",
+    description:
+      "Designed and developed a stylish, user-friendly e-commerce website for Yeralds Signature, a fashion brand specializing in African-inspired ready-to-wear clothing for plus-size women.",
+    image: "/projects/Yeraldssignature.png",
+    tags: ["Wordpress", "Contact form 7", "Woocomerce", "WP Mail SMTP"],
+    demoUrl: "https://yeraldssignature.com/",
+    // githubUrl: "https://github.com/Snofts/Signalist_stock-tracker-app.git",
+  },
   {
     id: 1,
     title: "Signalist Stock tracker App",
@@ -70,7 +81,7 @@ const projects = [
     image: "/projects/Phenz.png",
     tags: ["Wordpress", "Html", "CSS", "JS"],
     demoUrl: "https://phenz.shop",
-    githubUrl: "#",
+    // githubUrl: "#",
   },
   {
     id: 8,
@@ -90,7 +101,7 @@ const projects = [
     image: "/projects/poshsafety.png",
     tags: ["Wordpress", "HTML", "CSS", "JS"],
     demoUrl: "https://app.poshsafety.com/dominium/",
-    githubUrl: "#",
+    // githubUrl: "#",
   },
   {
     id: 10,
@@ -128,6 +139,7 @@ const ProjectSection = () => {
   const [showAll, setShowAll] = useState(false);
 
   const displayedProjects = showAll ? projects : projects.slice(0, 6);
+  const navigate = useNavigate();
 
   return (
     <section id="projects" className="py-24 px-4 relative">
@@ -144,6 +156,9 @@ const ProjectSection = () => {
             <div
               key={key}
               className="flex flex-col justify-between group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              onClick={() => {
+                window.open(project.demoUrl, "_blank", "noopener,noreferrer");
+              }}
             >
               <div className="h-[50%] overflow-hidden">
                 <img
@@ -172,17 +187,21 @@ const ProjectSection = () => {
                   <a
                     href={project.demoUrl}
                     target="_blank"
-                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    className="flex justify-center align-center text-xs text-foreground/80 hover:text-primary transition-colors duration-300 bg-gray-700 rounded-lg p-2"
                   >
-                    <ExternalLink size={20} />
+                    <ExternalLink size={20} /> 
+                    <p className="ml-2">Open Website</p>
                   </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                  >
-                    <Github size={20} />
-                  </a>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      className="flex justify-center align-center text-xs  text-foreground/80 hover:text-primary transition-colors duration-300 bg-gray-700 rounded-lg p-2"
+                    >
+                      <Github size={20} /> 
+                      <p className="ml-2">Go to Github</p>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
