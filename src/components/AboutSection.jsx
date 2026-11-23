@@ -13,11 +13,11 @@ const AboutMe = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Passionate Software Developer & Tech Creator
             </h3>
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
+              With over 5 years of experience in software development, I specialize
+              in creating responsive, accessible, and performant software
               applications using modern technologies.
             </p>
 
