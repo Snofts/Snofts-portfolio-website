@@ -20,7 +20,7 @@ const projects = [
       "Signalist is a full-stack stock companion built with Next.js (App Router). It lets users: Sign up and sign in (email + password), Build a personal watchlist, Search and browse stocks (via Finnhub), View stock details and watchlist status and Receive email automation (welcome email + daily market news summaries)",
     image: "/projects/signalist.png",
     tags: ["Nextjs", "Tailwind", "MongoDb", "Nodejs"],
-    demoUrl: "https://signalist-stock-tracker-app-self.vercel.app/",
+    // demoUrl: "https://signalist-stock-tracker-app-self.vercel.app/",
     githubUrl: "https://github.com/Snofts/Signalist_stock-tracker-app.git",
   },
   {
@@ -184,19 +184,29 @@ const ProjectSection = () => {
               </div>
               <div className="flex justify-between items-center p-4">
                 <div className="flex space-x-3">
-                  <a
+                  {/* <a
                     href={project.demoUrl}
                     target="_blank"
-                    className="flex justify-center align-center text-xs text-foreground/80 hover:text-primary transition-colors duration-300 bg-gray-700 rounded-lg p-2"
+                    className="flex justify-center align-center text-xs text-white hover:text-primary transition-colors duration-300 bg-gray-700 rounded-lg p-2"
                   >
                     <ExternalLink size={20} /> 
                     <p className="ml-2">Open Website</p>
-                  </a>
+                  </a> */}
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      className="flex justify-center align-center text-xs  text-white hover:text-primary transition-colors duration-300 bg-gray-700 rounded-lg p-2"
+                    >
+                      <ExternalLink size={20} /> 
+                      <p className="ml-2">Open Website</p>
+                    </a>
+                  )}
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      className="flex justify-center align-center text-xs  text-foreground/80 hover:text-primary transition-colors duration-300 bg-gray-700 rounded-lg p-2"
+                      className="flex justify-center align-center text-xs  text-white hover:text-primary transition-colors duration-300 bg-gray-700 rounded-lg p-2"
                     >
                       <Github size={20} /> 
                       <p className="ml-2">Go to Github</p>
